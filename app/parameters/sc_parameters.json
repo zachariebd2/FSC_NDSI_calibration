@@ -1,0 +1,305 @@
+{
+   "dates": {
+      "start_date": "2017-09-01",
+      "end_date": "2018-08-31",
+      "nb_shift_days": 0
+   },
+   "paths": {
+      "path_outputs": "/work/OT/siaa/Theia/Neige/CoSIMS/zacharie/TOOLS/snowcover/OUTPUTS/",
+      "path_inputs": "/work/OT/siaa/Theia/Neige/CoSIMS/zacharie/TOOLS/snowcover/INPUTS/FSC/",
+      "path_LIS": "/work/datalake/S2-L2B-COSIMS/data/Snow/FSC",
+      "path_tree": "/work/OT/siaa/Theia/Neige/CoSIMS/data/tree_cover_density/original_tiling/TCD_2015_020m_eu_03035_d05_full.tif",
+      "path_DEM": "/work/OT/siaa/Theia/Neige/DEM",
+      "path_countries": "/work/OT/siaa/Theia/Neige/CoSIMS/zacharie/TOOLS/snowcover/INPUTS/DATA/countries",
+      "path_landcover": "/work/OT/siaa/Theia/Neige/CoSIMS/zacharie/TOOLS/snowcover/INPUTS/DATA/landcover/PROBAV_LC100_global_v3.0.1_2018-conso_Discrete-Classification-map_EPSG-4326.tif",
+      "path_MAJA": "/work/datalake/S2-L2A-MAJA/data"
+   },
+   "sets": [
+      {
+         "source": "PLEIADES",
+         "out": "PLEIADES",
+         "max_J": 50,
+         "epsg": "",
+         "resample": "average",
+         "snw": [
+            1
+         ],
+         "nosnw": [
+            2
+         ],
+         "nodt": [],
+         "selection": "closest",
+         "make_set": [
+            0
+         ],
+         "plt_dates": false,
+         "plt_periode": false,
+         "quicklooks": false,
+         "calibrate": false,
+         "eval_target": true,
+         "eval_cal": false,
+         "perc_cal": 0.4,
+         "eval_modes": [
+            "all"
+         ],
+         "eval_res": 20
+      },
+      {
+         "source": "PLEIADES2",
+         "out": "FINSE",
+         "max_J": 50,
+         "epsg": "",
+         "resample": "average",
+         "snw": [
+            100
+         ],
+         "nosnw": [
+            0,
+            1,
+            2
+         ],
+         "nodt": [
+            -9999
+         ],
+         "selection": "cleanest",
+         "make_set": [
+            0
+         ],
+         "plt_dates": false,
+         "plt_periode": false,
+         "quicklooks": false,
+         "calibrate": false,
+         "eval_target": false,
+         "eval_cal": false,
+         "perc_cal": 0.4,
+         "eval_modes": [
+            "separate",
+            "all"
+         ],
+         "eval_res": 20
+      },
+      {
+         "source": "SPOT67",
+         "out": "SPOT67",
+         "max_J": 50,
+         "epsg": "",
+         "resample": "average",
+         "snw": [
+            2
+         ],
+         "nosnw": [
+            1
+         ],
+         "nodt": [
+            0
+         ],
+         "selection": "cleanest",
+         "make_set": [
+            0
+         ],
+         "plt_dates": false,
+         "plt_periode": false,
+         "quicklooks": false,
+         "calibrate": false,
+         "eval_target": false,
+         "eval_cal": false,
+         "perc_cal": 0.4,
+         "eval_modes": [
+            "all",
+            "separate",
+            "average"
+         ],
+         "eval_res": 20
+      },
+      {
+         "source": "IZAS",
+         "out": "IZAS",
+         "max_J": 50,
+         "epsg": "25830",
+         "resample": "average",
+         "snw": [
+            1
+         ],
+         "nosnw": [
+            0
+         ],
+         "nodt": [],
+         "selection": "closest",
+         "make_set": [
+            0
+         ],
+         "plt_dates": false,
+         "plt_periode": false,
+         "quicklooks": false,
+         "calibrate": false,
+         "eval_target": false,
+         "eval_cal": false,
+         "perc_cal": 0.4,
+         "eval_modes": [
+            "all"
+         ],
+         "eval_res": 20
+      },
+      {
+         "source": "DISCHMEX",
+         "out": "DISCHMEX",
+         "max_J": 50,
+         "epsg": "21781",
+         "resample": "average",
+         "snw": [
+            1
+         ],
+         "nosnw": [
+            0
+         ],
+         "nodt": [],
+         "selection": "closest",
+         "make_set": [
+            0
+         ],
+         "plt_dates": false,
+         "plt_periode": false,
+         "quicklooks": false,
+         "calibrate": false,
+         "eval_target": false,
+         "eval_cal": false,
+         "perc_cal": 0.4,
+         "eval_modes": [
+            "all"
+         ],
+         "eval_res": 20
+      },
+      {
+         "source": "WEISSSEE",
+         "out": "WEISSSEE",
+         "max_J": 50,
+         "epsg": "31254",
+         "resample": "average",
+         "snw": [
+            1
+         ],
+         "nosnw": [
+            0
+         ],
+         "nodt": [],
+         "selection": "closest",
+         "make_set": [
+            0
+         ],
+         "plt_dates": false,
+         "plt_periode": false,
+         "quicklooks": false,
+         "calibrate": false,
+         "eval_target": false,
+         "eval_cal": false,
+         "perc_cal": 0.4,
+         "eval_modes": [
+            "all"
+         ],
+         "eval_res": 20
+      },
+      {
+         "source": "CAMSNOW",
+         "out": "CAMSNOW",
+         "max_J": 50,
+         "epsg": "2154",
+         "resample": "near",
+         "snw": [],
+         "nosnw": [],
+         "nodt": [
+            -99999
+         ],
+         "selection": "closest",
+         "make_set": [
+            0
+         ],
+         "plt_dates": false,
+         "plt_periode": false,
+         "quicklooks": false,
+         "calibrate": false,
+         "eval_target": false,
+         "eval_cal": false,
+         "perc_cal": 0.4,
+         "eval_modes": [
+            "all"
+         ],
+         "eval_res": 20
+      }
+   ],
+   "DP": [
+      {
+         "source": "ODK",
+         "out": "ODK",
+         "make_set": [
+            0
+         ],
+         "max_J": 50,
+         "filter_acc": true,
+         "filter_snw": true,
+         "eval_cal": false,
+         "max_acc": 5,
+         "snw_type": "fsc",
+         "epsg": "4326"
+      },
+      {
+         "source": "CSO",
+         "out": "CSO",
+         "make_set": [],
+         "max_J": 2000,
+         "filter_acc": false,
+         "filter_snw": false,
+         "eval_cal": false,
+         "max_acc": 5,
+         "snw_type": "depth",
+         "epsg": "4326"
+      },
+      {
+         "source": "METEOFRANCE",
+         "out": "METEOFRANCE",
+         "make_set": [],
+         "max_J": 1000,
+         "filter_acc": false,
+         "filter_snw": false,
+         "eval_cal": false,
+         "max_acc": 5,
+         "snw_type": "depth",
+         "epsg": "4326"
+      },
+      {
+         "source": "SYNOP",
+         "out": "SYNOP",
+         "make_set": [],
+         "max_J": 2000,
+         "filter_acc": false,
+         "filter_snw": false,
+         "eval_cal": false,
+         "max_acc": 5,
+         "snw_type": "depth",
+         "epsg": "4326"
+      },
+      {
+         "source": "BDALPS",
+         "out": "BDALPS",
+         "make_set": [],
+         "max_J": 2000,
+         "filter_acc": false,
+         "filter_snw": false,
+         "eval_cal": false,
+         "max_acc": 5,
+         "snw_type": "depth",
+         "epsg": "4326"
+      },
+      {
+         "source": "BD_SYNOP_ALPS",
+         "out": "BD_SYNOP_ALPS",
+         "make_set": [],
+         "max_J": 2000,
+         "filter_acc": false,
+         "filter_snw": false,
+         "eval_cal": true,
+         "max_acc": 5,
+         "snw_type": "depth",
+         "epsg": "4326"
+      }
+   ]
+}

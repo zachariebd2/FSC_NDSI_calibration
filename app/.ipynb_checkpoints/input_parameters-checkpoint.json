@@ -1,0 +1,189 @@
+{
+   "dates": {
+      "start_date": "2015-01-01",
+      "end_date": "2021-01-01",
+   },
+
+   "sets": [
+      {
+         "source": "PLEIADES",
+         "out": "PLEIADES",
+         "tiles": [
+            "T31TCH"
+         ],
+         "epsg": "",
+         "resample": "average",
+         "snw": [
+            1
+         ],
+         "nosnw": [
+            2
+         ],
+         "nodt": [],
+         "manual": "",
+         "selection": "closest",
+         "make_set": false,
+         "plt_dates": false,
+         "plt_periode": false,
+         "quicklooks": false,
+         "calibrate": false,
+         "eval_target": true,
+         "eval_cal": false,
+         "perc_cal": 0.4,
+         "eval_mode": [
+             "all"
+         ],
+      },
+      {
+         "source": "SPOT67",
+         "out": "SPOT67",
+         "tiles": [
+            "T32TLS",
+            "T32TLR",
+            "T32TLQ",
+            "T31TGK",
+            "T31TGL",
+            "T31TGM"
+         ],
+         "epsg": "",
+         "resample": "average",
+         "snw": [
+            2
+         ],
+         "nosnw": [
+            1
+         ],
+         "nodt": [
+            0
+         ],
+         "manual": "",
+         "selection": "cleanest",
+         "make_set": false,
+         "plt_dates": false,
+         "plt_periode": false,
+         "quicklooks": false,
+         "calibrate": false,
+         "eval_target": true,
+         "eval_cal": false,
+         "perc_cal": 0.4,
+         "eval_mode": [
+             "all"
+         ],
+      },
+      {
+         "source": "IZAS",
+         "out": "IZAS",
+         "tiles": [
+            "T30TYN"
+         ],
+         "epsg": "25830",
+         "resample": "average",
+         "snw": [
+            1
+         ],
+         "nosnw": [
+            0
+         ],
+         "nodt": [],
+         "manual": "",
+         "selection": "closest",
+         "make_set": false,
+         "plt_dates": false,
+         "plt_periode": false,
+         "quicklooks": false,
+         "calibrate": false,
+         "eval_target": true,
+         "eval_cal": false,
+         "perc_cal": 0.4,
+         "eval_mode": [
+             "all"
+         ],
+      },
+      {
+         "source": "DISCHMEX",
+         "out": "DISCHMEX",
+         "tiles": [],
+         "epsg": "21781",
+         "resample": "average",
+         "snw": [
+            1
+         ],
+         "nosnw": [
+            0
+         ],
+         "nodt": [],
+         "manual": "",
+         "selection": "closest",
+         "make_set": false,
+         "plt_dates": false,
+         "plt_periode": false,
+         "quicklooks": false,
+         "calibrate": false,
+         "eval_target": true,
+         "eval_cal": false,
+         "perc_cal": 0.4,
+         "eval_mode": [
+             "all"
+         ],
+      },
+      {
+         "source": "WEISSSEE",
+         "out": "WEISSSEE",
+         "tiles": [],
+         "epsg": "31254",
+         "resample": "average",
+         "snw": [
+            1
+         ],
+         "nosnw": [
+            0
+         ],
+         "nodt": [],
+         "manual": "",
+         "selection": "closest",
+         "make_set": true,
+         "plt_dates": true,
+         "plt_periode": true,
+         "quicklooks": true,
+         "calibrate": false,
+         "eval_target": true,
+         "eval_cal": false,
+         "perc_cal": 0.4,
+         "eval_mode": [
+             "all"
+         ],
+      },
+      {
+         "source": "CAMSNOW",
+         "out": "CAMSNOW",
+         "tiles": [],
+         "epsg": "2154",
+         "resample": "near",
+         "snw": [],
+         "nosnw": [],
+         "nodt": [],
+         "manual": "",
+         "selection": "closest",
+         "make_set": false,
+         "plt_dates": false,
+         "plt_periode": false,
+         "quicklooks": false,
+         "calibrate": false,
+         "eval_target": true,
+         "eval_cal": false,
+         "perc_cal": 0.4,
+         "eval_mode": [
+             "all"
+         ],
+      }
+   ],
+   "DP": {
+      "source": "ODK",
+      "out": "ODK",
+      "do_filter": false,
+      "filter_acc": true,
+      "filter_snw": true,
+      "eval_cal": false,
+      "max_acc": 5
+   }
+}

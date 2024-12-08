@@ -1,0 +1,280 @@
+{
+   "dates": {
+      "start_date": "2015-06-01",
+      "end_date": "2021-07-01",
+      "nb_shift_days": 4
+   },
+   "paths": {
+      "path_outputs": "/work/OT/siaa/Theia/Neige/CoSIMS/zacharie/TOOLS/snowcover/OUTPUTS/",
+      "path_inputs": "/work/OT/siaa/Theia/Neige/CoSIMS/zacharie/TOOLS/snowcover/INPUTS/FSC/",
+      "path_LIS": "/work/datalake/S2-L2B-COSIMS/data/Snow/FSC",
+      "path_tree": "/work/OT/siaa/Theia/Neige/CoSIMS/data/tree_cover_density/original_tiling/TCD_2015_020m_eu_03035_d05_full.tif"
+   },
+   "sets": [
+      {
+         "source": "PLEIADES",
+         "out": "PLEIADES",
+         "tiles": [
+            "31TCH"
+         ],
+         "epsg": "",
+         "resample": "average",
+         "snw": [
+            1
+         ],
+         "nosnw": [
+            2
+         ],
+         "nodt": [],
+         "manual": "",
+         "selection": "closest",
+         "make_set": false,
+         "plt_dates": false,
+         "plt_periode": false,
+         "quicklooks": false,
+         "calibrate": false,
+         "eval_target": true,
+         "eval_cal": false,
+         "perc_cal": 0.4,
+         "eval_modes": [
+            "all"
+         ],
+         "eval_res": 20
+      },
+      {
+         "source": "PLEIADES2",
+         "out": "FINSE",
+         "tiles": [
+            "32VMN",
+            "32VLN",
+            "33WXR",
+            "34WDA"
+         ],
+         "epsg": "",
+         "resample": "average",
+         "snw": [
+            100
+         ],
+         "nosnw": [
+            0,
+            1,
+            2
+         ],
+         "nodt": [
+            -9999
+         ],
+         "manual": "",
+         "selection": "cleanest",
+         "make_set": false,
+         "plt_dates": false,
+         "plt_periode": false,
+         "quicklooks": false,
+         "calibrate": false,
+         "eval_target": false,
+         "eval_cal": false,
+         "perc_cal": 0.4,
+         "eval_modes": [
+            "separate",
+            "all"
+         ],
+         "eval_res": 20
+      },
+      {
+         "source": "SPOT67",
+         "out": "SPOT67",
+         "tiles": [
+            "32TLS",
+            "32TLR",
+            "32TLQ",
+            "31TGK",
+            "31TGL",
+            "31TGM"
+         ],
+         "epsg": "",
+         "resample": "average",
+         "snw": [
+            2
+         ],
+         "nosnw": [
+            1
+         ],
+         "nodt": [
+            0
+         ],
+         "manual": "",
+         "selection": "cleanest",
+         "make_set": false,
+         "plt_dates": false,
+         "plt_periode": false,
+         "quicklooks": false,
+         "calibrate": false,
+         "eval_target": false,
+         "eval_cal": false,
+         "perc_cal": 0.4,
+         "eval_modes": [
+            "all",
+            "separate",
+            "average"
+         ],
+         "eval_res": 20
+      },
+      {
+         "source": "IZAS",
+         "out": "IZAS",
+         "tiles": [
+            "30TYN"
+         ],
+         "epsg": "25830",
+         "resample": "average",
+         "snw": [
+            1
+         ],
+         "nosnw": [
+            0
+         ],
+         "nodt": [],
+         "manual": "",
+         "selection": "closest",
+         "make_set": false,
+         "plt_dates": false,
+         "plt_periode": false,
+         "quicklooks": false,
+         "calibrate": false,
+         "eval_target": false,
+         "eval_cal": false,
+         "perc_cal": 0.4,
+         "eval_modes": [
+            "all"
+         ],
+         "eval_res": 20
+      },
+      {
+         "source": "DISCHMEX",
+         "out": "DISCHMEX",
+         "tiles": [],
+         "epsg": "21781",
+         "resample": "average",
+         "snw": [
+            1
+         ],
+         "nosnw": [
+            0
+         ],
+         "nodt": [],
+         "manual": "",
+         "selection": "closest",
+         "make_set": false,
+         "plt_dates": false,
+         "plt_periode": false,
+         "quicklooks": false,
+         "calibrate": false,
+         "eval_target": false,
+         "eval_cal": false,
+         "perc_cal": 0.4,
+         "eval_modes": [
+            "all"
+         ],
+         "eval_res": 20
+      },
+      {
+         "source": "WEISSSEE",
+         "out": "WEISSSEE",
+         "tiles": [],
+         "epsg": "31254",
+         "resample": "average",
+         "snw": [
+            1
+         ],
+         "nosnw": [
+            0
+         ],
+         "nodt": [],
+         "manual": "",
+         "selection": "closest",
+         "make_set": false,
+         "plt_dates": false,
+         "plt_periode": false,
+         "quicklooks": false,
+         "calibrate": false,
+         "eval_target": false,
+         "eval_cal": false,
+         "perc_cal": 0.4,
+         "eval_modes": [
+            "all"
+         ],
+         "eval_res": 20
+      },
+      {
+         "source": "CAMSNOW",
+         "out": "CAMSNOW",
+         "tiles": [],
+         "epsg": "2154",
+         "resample": "near",
+         "snw": [],
+         "nosnw": [],
+         "nodt": [
+            -99999
+         ],
+         "manual": "",
+         "selection": "closest",
+         "make_set": false,
+         "plt_dates": false,
+         "plt_periode": false,
+         "quicklooks": false,
+         "calibrate": false,
+         "eval_target": false,
+         "eval_cal": false,
+         "perc_cal": 0.4,
+         "eval_modes": [
+            "all"
+         ],
+         "eval_res": 20
+      }
+   ],
+   "DP": [
+      {
+         "source": "ODK",
+         "out": "ODK",
+         "do_filter": false,
+         "filter_acc": true,
+         "filter_snw": true,
+         "eval_cal": false,
+         "max_acc": 5,
+         "snw_type": "fsc",
+         "epsg": "4326"
+      },
+      {
+         "source": "CSO",
+         "out": "CSO",
+         "do_filter": false,
+         "filter_acc": false,
+         "filter_snw": false,
+         "eval_cal": true,
+         "max_acc": 5,
+         "snw_type": "sca",
+         "epsg": "4326"
+      },
+      {
+         "source": "METEOFRANCE",
+         "out": "METEOFRANCE",
+         "do_filter": false,
+         "filter_acc": false,
+         "filter_snw": false,
+         "eval_cal": true,
+         "max_acc": 5,
+         "snw_type": "sca",
+         "epsg": "4326"
+      },
+      {
+         "source": "mondefrance",
+         "out": "mondefrance",
+         "do_filter": false,
+         "filter_acc": false,
+         "filter_snw": false,
+         "eval_cal": false,
+         "max_acc": 5,
+         "snw_type": "sca",
+         "epsg": "4326"
+      }
+   ]
+}
